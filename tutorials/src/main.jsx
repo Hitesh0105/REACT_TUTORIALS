@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createElement } from 'react'
 import { createRoot } from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css'
-//import './index.css'
+import './index.css'
 // import App from './App.jsx'
 
 // createRoot(document.getElementById('root')).render(
@@ -109,7 +109,22 @@ Don't use innerHTML to accomplish any of this.
 //   <h1 className='Header'>This is Declarative</h1>
 // )
 
-const root =createRoot(document.getElementById('root'));
+// const root =createRoot(document.getElementById('root'));
+// root.render(
+//   <h1 className='Header'>This is Declarative</h1>
+// )
+
+const root= createRoot(document.getElementById('root'));
 root.render(
-  <h1 className='Header'>This is Declarative</h1>
+   <main>
+      <img src='./src/assets/react.svg' alt='react-logo'/>
+      <h1>Fun facts about React!</h1>
+        <ul>
+            <li>Was first release in 2013</li>
+            <li>Was originally created by Jordan Walke</li>
+            <li>Has well over 200K stars on GitHub</li>
+            <li>Is maintained by Meta</li>
+            <li>Powers thousands of enterprise apps, including mobile apps</li>
+        </ul>
+   </main>
 )
