@@ -110,7 +110,7 @@ code {
   background: var(--code-bg);
 } */
 
-body{
+/* body{
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
   background: #27292c;
@@ -119,4 +119,93 @@ body{
 
 h1{
   margin-top:30px ;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo{
+  width:55px;
+}
+
+.nav-list{
+  list-style: none;
+  display:flex;
+}
+
+.nav-list-item{
+  margin-right: 10px;
+  font-size: 1.1rem;
+} */
+
+
+/* ReactFacts project Navbar */
+main{
+  padding: 60px 30px;
+  background-image: url(./assets/react.svg);
+  background-repeat: no-repeat;
+  /* background-position-x:right ;
+  background-position-y:65% ; */
+  background-position:right 70% ;
+  background-size: 50px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: #282D35;
+  color: white;
+}
+
+nav>img {
+  width: 60px;
+  margin-right: 7px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+}
+
+header {
+  height: 90px;
+  background-color: #21222A;
+  padding: 30px 25px;
+}
+
+nav>span{
+  color:#61DAFB;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+main{
+  padding: 60px 30px;
+}
+main>h1{
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.facts-list{
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.facts-list>li{
+  padding-block: 10px;
+  line-height: 19px;
+}
+
+.facts-list > li::marker{
+  color:#61DAFB;
+  font-size: 1.5rem;
 }
