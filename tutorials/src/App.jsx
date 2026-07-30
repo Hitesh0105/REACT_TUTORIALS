@@ -11,7 +11,10 @@ import Header from './travel_journal_components/Header'
 import Entry from './travel_journal_components/Entry'
 import Contact from './travel_journal_components/Contact'
 import Data from './data'
+import C_Header from './claude_chef_component/C_Header'
 function App() {
+
+  //#region default code of app
   // const [count, setCount] = useState(0)
 
   // return (
@@ -124,7 +127,9 @@ function App() {
   //     <section id="spacer"></section>
   //   </>
   // )
+  //#endregion
 
+  //#region travel journal  data
   const ninjaTurtles = ["Donatello", "Michaelangelo", "Rafael", "Leonardo"];
 
   // const dataArray=Data.map((data)=>
@@ -167,28 +172,34 @@ function App() {
   //   )
   // });
 
-    const dataArray = Data.map((data) => {
-    return (
-      <Entry
-        key={data.id}
-        {...data}  // using spread operator to pass object
-      />
-    )
-  });
+  //for entry compoent in travel journal 1
+  //   const dataArray = Data.map((data) => {
+  //   return (
+  //     <Entry
+  //       key={data.id}
+  //       {...data}  // using spread operator to pass object
+  //     />
+  //   )
+  // });
+
+  //#endregion
 
 
   return (
     <>
+      {/* //#region turtles map */}
       {/* <main>
         {ninjaTurtles.map((t)=><h2>{t}</h2>)}
       </main> */}
       {/* <Navbar />
       <Main /> */}
+      {/* //#endregion */}
 
-      {/* Travel Journal Project */}
-      <Header />
-      <main className='container'>
-        {/* <Entry 
+      {/* //#region Travel Journal Project 2 and 3 parts header main in between dataArray */}
+      {/* <Header /> */}
+      {/* <main className='container'>    */}
+      {/* //#region Entry static props commented */}
+      {/* <Entry 
           img={{
             src:'https://scrimba.com/links/travel-journal-japan-image-url',
             alt:'Mount Fuji'
@@ -199,8 +210,13 @@ function App() {
           dates="12 Jan, 2021 - 24 Jan, 2021"
           text="Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists."
         /> */}
-        {dataArray}
-      </main>
+      {/* //#endregion */}
+
+      {/* {dataArray}
+      </main> */}
+      {/* //#endregion */}
+
+      {/* //#region commented code whiskers */}
       {/* <div className='contacts'>
         <Contact
           name="Mr. Whiskerson"
@@ -227,6 +243,11 @@ function App() {
           alt="photo of Pumpkin"
         />
       </div> */}
+      {/* //#endregion */}
+
+
+      
+      <C_Header/>
     </>
   )
 }
